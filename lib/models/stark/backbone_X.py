@@ -112,7 +112,7 @@ def build_backbone_x_cnn(cfg, phase='train'):
     backbone = Backbone(cfg.MODEL.BACKBONE.TYPE, cfg.MODEL.BACKBONE.DILATION, cfg.TRAIN.FREEZE_BACKBONE_BN,
                         cfg.MODEL.BACKBONE.LAST_STAGE_BLOCK)
 
-    if phase is 'train':
+    if phase == 'train':
         """load pretrained backbone weights"""
         ckpt_path = None
         if hasattr(cfg, "ckpt_dir"):
@@ -160,7 +160,7 @@ def build_backbone_x_swin(cfg, phase='train'):
     else:
         raise ValueError("Unsupported model_name")
 
-    if phase is 'train':
+    if phase == 'train':
         """load pretrained backbone weights"""
         ckpt_path = None
         if hasattr(cfg, "ckpt_dir"):
