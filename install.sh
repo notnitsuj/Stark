@@ -82,7 +82,7 @@ python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data
 echo ""
 echo ""
 echo "****************** Downloading checkpoints ******************"
-pip install gdown
+pip install --upgrade gdown
 gdown 1sV_idlYLyxeCIO2o4AQDvUFO5b-X-E4w --output checkpoints/train/stark_st2/baseline/
 
 echo ""
