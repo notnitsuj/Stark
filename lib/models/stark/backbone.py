@@ -7,10 +7,10 @@ import torch.nn.functional as F
 from torch import nn
 from torchvision.models._utils import IntermediateLayerGetter
 from typing import Dict, List
-from lib.utils.misc import NestedTensor, is_main_process
+from ...utils.misc import NestedTensor, is_main_process
 from .position_encoding import build_position_encoding
-from lib.models.stark import resnet as resnet_module
-from lib.models.stark.repvgg import get_RepVGG_func_by_name
+from ...models.stark import resnet as resnet_module
+from ...models.stark.repvgg import get_RepVGG_func_by_name
 import os
 
 
