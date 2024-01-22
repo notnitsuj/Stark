@@ -1,8 +1,8 @@
 import torch.nn as nn
 import torch
 import torch.nn.functional as F
-from lib.models.stark.backbone import FrozenBatchNorm2d
-from lib.models.stark.repvgg import RepVGGBlock
+from ...models.stark.backbone import FrozenBatchNorm2d
+from ...models.stark.repvgg import RepVGGBlock
 # import time
 
 
