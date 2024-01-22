@@ -1,14 +1,14 @@
-from lib.test.tracker.basetracker import BaseTracker
+from .basetracker import BaseTracker
 import torch
-from lib.train.data.processing_utils import sample_target
+from ...train.data.processing_utils import sample_target
 from copy import deepcopy
 # for debug
 import cv2
 import os
-from lib.utils.merge import merge_template_search
-from lib.models.stark import build_starkst
-from lib.test.tracker.stark_utils import Preprocessor
-from lib.utils.box_ops import clip_box
+from ...utils.merge import merge_template_search
+from ...models.stark import build_starkst
+from ...test.tracker.stark_utils import Preprocessor
+from ...utils.box_ops import clip_box
 
 
 class STARK_ST(BaseTracker):

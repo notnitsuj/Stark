@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from lib.utils.misc import NestedTensor
+from ...utils.misc import NestedTensor
 
 
 class Preprocessor(object):

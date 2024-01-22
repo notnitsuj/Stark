@@ -2,7 +2,7 @@ import torch
 import torch.utils.data.dataloader
 import importlib
 import collections
-from lib.utils import TensorDict, TensorList
+from ...utils import TensorDict, TensorList
 
 
 def _check_use_shared_memory():

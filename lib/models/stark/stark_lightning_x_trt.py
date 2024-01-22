@@ -9,7 +9,7 @@ from .backbone_X import build_backbone_x
 from .position_encoding import build_position_encoding_new
 from .lite_encoder import build_lite_encoder  # encoder only
 from .head import build_box_head
-from lib.utils.box_ops import box_xyxy_to_cxcywh
+from ...utils.box_ops import box_xyxy_to_cxcywh
 import time
 
 

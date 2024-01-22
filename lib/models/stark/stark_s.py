@@ -4,13 +4,12 @@ Basic STARK Model (Spatial-only).
 import torch
 from torch import nn
 
-from lib.utils.misc import NestedTensor
+from ...utils.misc import NestedTensor
 
 from .backbone import build_backbone
 from .transformer import build_transformer
 from .head import build_box_head
-from lib.utils.box_ops import box_xyxy_to_cxcywh
-
+from ...utils.box_ops import box_xyxy_to_cxcywh
 
 class STARKS(nn.Module):
     """ This is the base class for Transformer Tracking """
